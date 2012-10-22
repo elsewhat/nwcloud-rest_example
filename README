@@ -1,0 +1,6 @@
+Exposing a REST API from #SAPNWCloud
+http://scn.sap.com/community/developer-center/cloud-platform/blog/2012/05/25/exposing-a-rest-api-from-sapnwcloud
+
+curl commands for testing the REST service
+curl -i -X POST -H 'Content-Type: application/json' -d '{"senderName":"Jane Doe","feedText":"test","isComment":false,"senderEmail":"dagfinn.parnas@bouvet.no"}' http://localhost:8080/nwcloud-rest_example/api/feed/
+curl  -i -H "Accept: application/json" http://localhost:8080/nwcloud-rest_example/api/feed/
